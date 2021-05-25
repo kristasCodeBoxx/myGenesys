@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Quote</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky transparent clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left" href="index.html">
+							<img src="/assets/images/R2.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="#slider">
+											HOME
+										</a>
+									</li>
+									<li><!-- PRICING -->
+										<a href="#pricing">
+											PRICING
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+			<!-- HOME -->
+			<section id="slider" class="fullheight" style="background:url('assets/images/34-min.jpg')">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="display-table">
+					<div class="display-table-cell vertical-align-middle">
+						
+						<div class="container text-center">
+							
+							<h1 class="m-0 fs-50 fw-300 wow fadeInUp" data-wow-delay="0.4s">Elevate Safety, Speed and Style</h1>
+							<p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">Get a Quote in Just a Few Easy Steps</p>
+							
+							<div class="mt-30">
+								<a href="index.html" class="btn btn-3d btn-lg btn-teal"><i class="glyphicon glyphicon-th-large"></i>Back to Home</a>
+								<a href="#quote" class="btn btn-3d btn-lg btn-red"><i class="glyphicon glyphicon-user"></i>START to Get Quote</a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- /HOME -->
+
+
+			<!-- Quoutes -->
+			<section>
+	
+				<div class="row col-lg-12">
+				
+			
+					<div class="col-lg-4">
+				
+						<!--input-->
+						<div class="heading-title heading-border-bottom">
+							<h3>Start Here:</h3>
+						</div>
+						
+						<div id="select" class="col-md-12">
+							<label class="col-md-12" for="department">Type of your project</label>
+								<select id="form_select" onchange="showDiv(this)">
+									<option value="0">--- Select ---</option>
+									<option value="1" >Residential</option>
+									<option value="2" >Commercial</option>
+									<option value="3" >Corporate</option>
+									<option value="4" >Hybrid</option>
+								</select>
+						</div>
+					
+						<div class="col-md-12" id="1" style="display:none;" name="residential">
+
+							<div class="col-md-12">
+								<label for="residential">Enter number of apartments in the building</label>
+								<input required onchange="selectASAP()" type="number" min="1" value="1" class="form-control" 
+								id="numOfAppartementsR" placeholder="Enter a number greater than one">
+							</div>
+
+							<div class="col-md-12">
+								<label for="residential">Enter number of floors in the building, excluding basement</label>
+								<input required onchange="selectASAP()" type="number" min="1" value="1" class="form-control"  
+								id="numOfFloorsR" placeholder="Enter a number greater than one">
+							</div>
+
+							<div class="col-md-12">
+								<label for="residential">The number of basements contained in the building</label>
+								<input required onchange="selectASAP()" type="number" min="0" value="1" class="form-control" 
+								id="numOfBasementsR" placeholder="Enter a number greater than one">
+							</div>
+
+						</div>
+
+						
+						<div class="col-md-12" id="2" style="display:none;" name="commercial">
+
+							<div class="col-md-12">
+								<label for="commercial">Enter number of distinct businesses.</label>
+								<input required onchange="selectASAP()" type="number" min="1" value="1" class="form-control" 
+								id="numOfBusinessesB" placeholder="Enter a number greater than one">
+							</div>
+
+							<div class="col-md-12">
+								<label for="commercial">Enter number of floors in the building, excluding basement</label>
+								<input required onchange="selectASAP()" type="number" min="1" value="1" class="form-control" 
+								id="numOfFloorsB" placeholder="Enter a number greater than one">
+							</div>
+
+							<div class="col-md-12">
+								<label for="commercial">Enter number of basements contained in the building</label>
+								<input required onchange="selectASAP()" type="number" min="0" value="0" class="form-control" 
+								id="numOfBasementsB" placeholder="Enter a number greater than zero">
+							</div>
+
+							<div class="col-md-12">
+								<label for="commercial">Enter number of parking space available</label>
+								<input required onchange="selectASAP()" type="number" min="0" value="0" class="form-control" 
+								id="numOfParkingsB" placeholder="Enter a number greater than zero">
+							</div>
+
+							<div class="col-md-12">
+								<label for="commercial">Enter number of elevator cages to be deployed</label>
+								<input required onchange="selectASAP()" type="number" min="1" value="1" class="form-control" 
+								id="numOfCagesB" placeholder="Enter a number greater than one">
+							</div>
+
+						</div>
+
+						
+						<div class="col-md-12" id="3" style="display:none;" name="corporate">
+
+							<div class="col-md-12">
+								<label for="corporate">Enter number of separate tenant companies</label>
+								<input required onchange="selectASAP()" type="number" class="form-control" 
+								id="numOfCompaniesC" placeholder="Enter a number greater than one">
+							</div>
+
+							<div class="col-md-12">
+								<label for="corporate">Enter number of floors in the building, excluding basement</label>
+								<input required onchange="selectASAP()" type="number" class="form-control" 
+								id="numOfFloorsC" placeholder="Enter a number greater than one">
+							</div>
+
+							<div class="col-md-12">
+								<label for="corporate">Enter number of basements contained in the building</label>
+								<input required onchange="selectASAP()" type="number" class="form-control"  
+								id="numOfBasementsC" placeholder="Enter a number greater than zero">
+							</div>
+
+							<div class="col-md-12">
+								<label for="corporate">Enter number of parking space available</label>
+								<input required onchange="selectASAP()" type="number" class="form-control" 
+								id="numOfParkingsC" placeholder="Enter a number greater than zero">
+							</div>
+
+							<div class="col-md-12">
+								<label for="corporate">Enter maximum number of occupants per floor</label>
+								<input required onchange="selectASAP()" type="number" class="form-control" 
+								id="numOfMaxOccupantsC" placeholder="Enter a number greater than one">
+							</div>
+
+						</div>
+
+						
+						<div class="col-md-12" id="4" style="display:none;" name="hybrid"> 
+
+							<div class="col-md-12">
+								<label for="hybrid">Enter number of distinct businesses</label>
+								<input required onchange="selectASAP()" type="number" min="1" value="1" class="form-control"  
+								id="numOfBusinessesH" placeholder="Enter a number greater than one">
+							</div>
+
+							<div class="col-md-12">
+								<label for="hybrid">Enter number of floors contained in the building, excluding basements</label>
+								<input required onchange="selectASAP()" type="number" min="1" value="1" class="form-control" 
+								id="numOfFloorsH" placeholder="Enter a number greater than one">
+							</div>
+
+							<div class="col-md-12">
+								<label for="hybrid">Enter number of basements contained in the building</label>
+								<input required onchange="selectASAP()" type="number" min="0" value="0" class="form-control"  
+								id="numOfBasementsH" placeholder="Enter a number greater than zero">
+							</div>
+
+							<div class="col-md-12">
+								<label for="hybrid">Enter number of parking spaces available</label>
+								<input required onchange="selectASAP()" type="number" min="0" value="0" class="form-control"  
+								id="numOfParkingsH" placeholder="Enter a number greater than zero">
+							</div>
+
+							<div class="col-md-12">
+								<label for="hybrid">Enter maximum number of occupants per floor</label>
+								<input required onchange="selectASAP()" type="number" min="01" value="1" class="form-control" 
+								id="numOfMaxOccupantsH" placeholder="Enter a number greater than one">
+							</div>
+							
+							<div class="col-md-12">
+								<label for="hybrid">Enter number of hours of activity of the building </label>
+								<input required onchange="selectASAP()" type="number" min="01" max="24" value="1" class="form-control" 
+								id="numOfActiveHours" placeholder="Enter a number greater than one">
+							</div>
+
+						</div>
+						<!--
+						<fieldset>
+							<label>Enter type of sevice in your interest</label>
+								<div  class="flex-row" id="service">
+									<input type="radio" class="radio" name="x" value="standard" id="standard" />
+									<label for="standard">Standard</label>
+
+									<input type="radio" class="radio" name="x" value="premium" id="premium" />
+									<label for="premium">Premium</label>
+
+									<input type="radio" class="radio" name="x" value="excelium"  id="excelium" />
+									<label for="excelium">Excelium</label>
+								</div>
+						</fieldset> -->
+						<div id="radiobuttons" class="container" name="buttons">
+
+							<label>Select the type of sevice in your interest</label>
+						  
+							<ul>
+							  <li>
+								<input type="radio" id="standard-option" name="material" value="standard" onchange="selectASAP(this)">
+								<label for="standard-option">Standard</label>
+						  
+								<div class="check"></div>
+							  </li>
+						  
+							  <li>
+								<input type="radio" id="premium-option" name="material" value="premium" onchange="selectASAP (this)" >
+								<label for="premium-option">Premium</label>
+						  
+								<div class="check">
+								  <div class="inside"></div>
+								</div>
+							  </li>
+						  
+							  <li>
+								<input type="radio" id="excelium-option" name="material" value="excelium" onchange="selectASAP(this)">
+								<label for="excelium-option">Excelium</label>
+						  
+								<div class="check">
+								  <div class="inside"></div>
+								</div>
+							  </li>
+							</ul>
+						</div>
+						  
+						  <p id="paragraph"></p>
+			
+					</div>
+					<div class="col-lg-4">
+
+						<!--calculte input data in JS in the js page and return to result-->		
+						
+						<!--OUTPUT read only from js-->	
+						<div class="heading-title heading-border-bottom readonle">
+							<h3>See Your Quote Results Here:</h3>
+						</div>
+
+						<div class="col-md-12 " id="out1">
+							<label>Unite price</label>
+							<input type="text" value="" class="form-control" name="unite price" 
+							id="unitePrice" onchange="selectASAP(this.value)" readonly>
+						</div>
+
+						<div class="col-md-12" id="out2">
+							<label>Number of elevators</label>
+							<input type="text" value="" class="form-control" name="Number of elevators" 
+							id="numOfElevators" onchange="selectASAP(this.value)" readonly>
+						</div>
+
+						<div class="col-md-12" id="out3">
+							<label>Total price of elevators</label>
+							<input type="text" value="" class="form-control" name="Price of elevators"
+							id="totalPriceOfElevators" onchange="selectASAP(this.value)" readonly>
+						</div>
+
+						<div class="col-md-12" id="out4">
+							<label >Installation fee</label>
+							<input type="text" value="" class="form-control" name="Installation fee"
+							id="installationFee" onchange="selectASAP(this.value)" readonly>
+						</div>
+
+						<div class="col-md-12" id="out4">
+							<label>Total</label>
+							<input type="text" value="" class="form-control"  name="Total"
+							id="totalFee" onchange="selectASAP(this.value)" readonly>
+						</div>
+
+
+					</div>
+
+					<div class="col-lg-4">
+						<!--Extra INFO-->	
+						<div class="heading-title heading-border-bottom">
+							<h3>What's next</h3>
+						</div>
+						
+						<p>Now you can contact us for further steps,
+						or if you have any questions let us know.
+						Please let us know about your experience. </p>
+						
+						<a href="index.html#Contact" class="btn btn-default btn-block btn-lg">Constact Us Now</a>
+					
+					</div>
+
+				</div>
+
+			</section>
+			<!-- / -->
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container" >
+
+					<div class="row">
+						<!-- Contact Address -->
+							<div>
+								<address>
+									<ul class="list-unstyled">
+										<li class="footer-sprite address">
+										PO Box  G2J 0C4<br>
+										418-725 Boulevard Lebourgneuf,<br>
+										Québec, QC<br>
+										</li>
+										<li class="footer-sprite phone">
+										Phone: +1 (581) 701-0303
+										</li>
+										<li class="footer-sprite email">
+										<a href="mailto:info@codeboxx.biz">info@codeboxx.biz</a>
+										</li>
+									</ul>
+								</address>
+							</div>
+							<!-- /Contact Address -->
+					</div>
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						&copy; All Rights Reserved, Rocket Elevators LTD 2021
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/quotes.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/calculation.js"></script>
+
+
+	</body>
+</html>
