@@ -1,0 +1,15 @@
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/cs.csproj.AssemblyReference.cache
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/cs.AssemblyInfoInputs.cache
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/cs.AssemblyInfo.cs
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/cs.csproj.CoreCompileInputs.cache
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/bin/Debug/net5.0/cs.deps.json
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/bin/Debug/net5.0/cs.runtimeconfig.json
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/bin/Debug/net5.0/cs.runtimeconfig.dev.json
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/bin/Debug/net5.0/cs.dll
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/bin/Debug/net5.0/ref/cs.dll
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/bin/Debug/net5.0/cs.pdb
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/cs.dll
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/ref/cs.dll
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/cs.pdb
+/Users/kristasheely/Documents/CodeBoxx/BootCamp/Odyssey/cs/obj/Debug/net5.0/cs.genruntimeconfig.cache
